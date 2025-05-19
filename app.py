@@ -102,11 +102,11 @@ if __name__ == "__main__":
         fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
 
         # Resultado 1
-        ax.plot(angulos, valores_1, linewidth=1.5, linestyle='solid', label=f"Evaluacion 360 {promedio_1}", color="blue")
+        ax.plot(angulos, valores_1, linewidth=1.5, linestyle='solid', label=f"Evaluacion 360 | {promedio_1}", color="blue")
         ax.fill(angulos, valores_1, alpha=0.2, color="darkblue")
 
         # Resultado 2
-        ax.plot(angulos, valores_2, linewidth=1.5, linestyle='solid', label=f"Autoevaluacion 360 {promedio_2}", color="teal")
+        ax.plot(angulos, valores_2, linewidth=1.5, linestyle='solid', label=f"Autoevaluacion 360 | {promedio_2}", color="teal")
         ax.fill(angulos, valores_2, alpha=0.2, color="teal")
 
         # Personalización
@@ -131,7 +131,7 @@ if __name__ == "__main__":
     #     # Can be used wherever a "file-like" object is accepted:
     #     dataframe = pd.read_csv(file_loaded, sep=",")
     #     st.write(dataframe)
-    #     
+    
     #     resultado_1_1 = create_dict_from_df_columns(dataframe, "Dimension", "Promedio")
     #     st.write(resultado_1_1)
     #     # Datos
